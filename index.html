@@ -1,0 +1,48 @@
+<body>
+  <div id="overlay">
+  <h1> MY LIBRARY </h1>
+  <div id="bookshelf">
+    <table>
+      <thead id="library-headers">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th> Remove</th>
+         <th> Complete?</th>
+        
+      </tr>
+      </thead>
+      <tbody id="book-shelf">
+   
+      </tbody>
+    </table>
+  </div>
+  <div class ="buttons-section">
+  <button id="book-form-btn"> Add New Book</button>
+  <button  onclick="completed()" > Mark As Completed</button>
+   <button onclick="inCompleted()" > Mark As Incomplete</button>
+  </div>
+  
+  <div id="book-form" class="book-form hidden">
+    <button id="cancel-btn"> X </button>
+     <h3> ADD A NEW BOOK</h3>
+    <form>
+     <label for="title">Title: <input type="text" id="title-input" placeholder="Book Title Goes Here"/> </label>
+      <label for="author">Author: <input type="text" id="author-input" placeholder="Name of Author"/></label>
+      
+      <label for="pages">Pages: <input type="number" id="pages-input" placeholder="Number of Book Pages"/></label>
+          
+      <div class ="buttons-section">
+      <button onclick="addBook()"> Save to Library</button>
+     
+      <button onclick="reset()"> Clear Form</button>
+      </div>
+    </form>   
+  </div>
+  </div>
+
+
+	  <script src="script.js"></script>
+</html>
+</body>
